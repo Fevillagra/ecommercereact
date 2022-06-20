@@ -1,14 +1,15 @@
 import './App.css';
-import Body from './components/Body';
-import Navbar from './components/Navbar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import Navbar from './components/Navbar/Navbar';
+import Welcome from './components/Welcome/Welcome';
 
 
 function App() {
   return (
     <div>
-      <Navbar/>
-      <Body />
-      <Body />
+      <Navbar />
+      <Welcome name="Pepper"/>
+      <ItemListContainer />
     </div>
   );
 }
