@@ -1,12 +1,27 @@
 .cuerpo {
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 300px;
     background-color: #9E9E9E;
-    padding: 2.5rem 2rem 1rem;
+    padding: 0 2rem;
+    margin: 2rem;
 }
 
 .cuerpo h2 {
-    font-size: 2rem;
+    font-style: italic;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #E53935;
+}
+
+.cuerpo__div {
+    width: auto;
+}
+
+.cuerpo__div i{
+    margin: 1rem;
+    color: #EEEEEE;
+    font-size: 3rem;
 }

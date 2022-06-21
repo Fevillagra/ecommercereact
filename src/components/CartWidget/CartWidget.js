@@ -7,7 +7,7 @@ function CartWidget() {
         <div className="cartwidget">
             <div className="cartwidget__cart-container">
                 <img src={Cart} className="cartwidget__cart-container--img"alt="cart"></img>
-                <p className="cartwidget__cart-container--p">$0.00</p>
+                <p className="cartwidget__cart-container--p">0</p>
             </div>
         </div>
     )
