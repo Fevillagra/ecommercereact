@@ -8,8 +8,8 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Welcome name="Pepper"/>
-      <ItemListContainer />
+      <Welcome/>
+      <ItemListContainer greeting="Productos de verdad. Cooming soon!"/>
     </div>
   );
 }
