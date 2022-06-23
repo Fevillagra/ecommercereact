@@ -1,13 +1,11 @@
-import './ItemListContainer.css'
+import './ItemListContainer.css';
+import ItemCount from '../ItemCount/ItemCount';
 
-function ItemListContainer (props) {
+function ItemListContainer () {
     return (
-        <section className="cuerpo">
-            <h2>{props.greeting}</h2>
-            <div className="cuerpo__div">
-                <i class="fa-solid fa-boxes-packing"></i>
-            </div>
-        </section>
+        <>
+        <ItemCount stock={10} initial={0}/>
+        </>
     );
 }
 
