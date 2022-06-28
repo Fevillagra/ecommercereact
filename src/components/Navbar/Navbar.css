@@ -5,11 +5,12 @@
 }
 
 .container-header {
-    padding: 0.5rem 2rem 1rem;
+    padding: .2rem 2rem .2rem;
     background-color: #212121;
     font-size: 1.3rem;
     position: fixed;
     top: 0;
+    opacity: .99;
 }
 
 .container-header-nav {
@@ -60,8 +61,7 @@
 }
 
 .container-header-nav__cart {
-    grid-column: 3/4;
-    grid-row: 0/1;
     display: flex;
     justify-content: center;
+    padding: .2rem 2rem .2rem;
 }

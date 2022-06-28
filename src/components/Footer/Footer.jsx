@@ -43,11 +43,11 @@ function Footer() {
                 </div>
             </div>
             <div className="footer__media">
-                <div className="footer__media--div"><a href="#f"><i class="fa-brands fa-facebook-f"></i></a></div>
-                <div className="footer__media--div"><a href="#f"><i class="fa-brands fa-twitter"></i></a></div>
-                <div className="footer__media--div"><a href="#f"><i class="fa-brands fa-youtube"></i></a></div>
-                <div className="footer__media--div"><a href="#f"><i class="fa-brands fa-instagram"></i></a></div>
-                <div className="footer__media--div"><a href="#f"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                <div className="footer__media--div"><a href="#f"><i className="fa-brands fa-facebook-f"></i></a></div>
+                <div className="footer__media--div"><a href="#f"><i className="fa-brands fa-twitter"></i></a></div>
+                <div className="footer__media--div"><a href="#f"><i className="fa-brands fa-youtube"></i></a></div>
+                <div className="footer__media--div"><a href="#f"><i className="fa-brands fa-instagram"></i></a></div>
+                <div className="footer__media--div"><a href="#f"><i className="fa-brands fa-linkedin-in"></i></a></div>
             </div>
             <div className="footer__copy">
                 <p>©Copyright. All rights reserved.</p>

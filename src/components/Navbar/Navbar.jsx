@@ -6,7 +6,7 @@ function Navbar() {
         <header className="container-header">
             <nav className="container-header-nav">
                 <div className="container-header-nav__logo">
-                    <a href="#b"><i class="fa-solid fa-pepper-hot"></i></a>
+                    <a href="#b"><i className="fa-solid fa-pepper-hot"></i></a>
                 </div>
                 <ul className="container-header-nav__list">
                     <li><a href="#b">Home</a></li>
