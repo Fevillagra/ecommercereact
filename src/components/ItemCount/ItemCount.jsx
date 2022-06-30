@@ -2,8 +2,10 @@ import './ItemCount.css'
 import { useState, useEffect } from "react";
 import Swal from 'sweetalert2';
 
-function ItemCount({stock, initial}) {
-
+function ItemCount({stock, initial, onAdd}) {
+    
+    
+    
     const [num, setNum] = useState(initial);
 
     useEffect( () => {
@@ -40,6 +42,11 @@ function ItemCount({stock, initial}) {
         setNum(initial)
     }
 
+    const addToCart = () => {
+        setNum(initial)
+        onAdd(num)
+    }
+
 
     return(
         <>
@@ -53,7 +60,7 @@ function ItemCount({stock, initial}) {
                 </div>
                 <div className="conterdiv__bntscontainer-2">
                     <button onClick={reset}>reset</button>
-                    <button>{ num > 0 ? `Agregar al carrito` : `Elegí tu cantidad`}</button>
+                    <button onClick={addToCart}>{ num > 0 ? `Agregar al carrito` : `Elegí tu cantidad`}</button>
                 </div>
             </div>
             <p>Nota: Es a modo demostrativo, para el proyecto final va a ser acorde a la card del producto.</p>

@@ -3,9 +3,21 @@ import ItemCount from '../ItemCount/ItemCount';
 import React, { useEffect, useState } from 'react';
 import { listadoProdutos } from '../../data/asyncMock';
 import { ItemList } from '../ItemList/ItemList';
+import Swal from 'sweetalert2';
+
 
 
 function ItemListContainer () {
+
+  const onAdd = (b) => {
+    if(b > 0) {
+      Swal.fire({
+        icon: 'success',
+        title: `Agregaste ${b} unidades al carrito`,
+        showConfirmButton: true,
+      })
+    }
+  }
 
     const [productos, setProductos] = useState([])
 
@@ -16,7 +28,7 @@ function ItemListContainer () {
               resolve(listadoProdutos)
               :
               reject("No hay datos")
-          }, 500);
+          }, 2000);
         }
         )
       }
@@ -29,7 +41,7 @@ function ItemListContainer () {
 
     return (
         <>
-            <ItemCount stock={10} initial={0}/>
+            <ItemCount stock={10} initial={0} onAdd={onAdd}/>
             <div>
                 <ItemList listadoProductos={productos} /> 
             </div>
