@@ -41,7 +41,6 @@ function ItemListContainer () {
 
     return (
         <>
-            <ItemCount stock={10} initial={0} onAdd={onAdd}/>
             <div>
                 <ItemList listadoProductos={productos} /> 
             </div>
