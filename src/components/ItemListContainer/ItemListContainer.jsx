@@ -1,23 +1,22 @@
 import './ItemListContainer.css';
-import ItemCount from '../ItemCount/ItemCount';
 import React, { useEffect, useState } from 'react';
 import { listadoProdutos } from '../../data/asyncMock';
 import { ItemList } from '../ItemList/ItemList';
-import Swal from 'sweetalert2';
+// import Swal from 'sweetalert2';
 
 
 
-function ItemListContainer () {
+export const ItemListContainer = () => {
 
-  const onAdd = (b) => {
-    if(b > 0) {
-      Swal.fire({
-        icon: 'success',
-        title: `Agregaste ${b} unidades al carrito`,
-        showConfirmButton: true,
-      })
-    }
-  }
+  // const onAdd = (b) => {
+  //   if(b > 0) {
+  //     Swal.fire({
+  //       icon: 'success',
+  //       title: `Agregaste ${b} unidades al carrito`,
+  //       showConfirmButton: true,
+  //     })
+  //   }
+  // }
 
     const [productos, setProductos] = useState([])
 
@@ -40,12 +39,10 @@ function ItemListContainer () {
       }, []) 
 
     return (
-        <>
-            <div>
-                <ItemList listadoProductos={productos} /> 
-            </div>
-        </>
+        
+          <div>
+              <ItemList listadoProductos={productos} /> 
+          </div>
+  
     );
 }
-
-export default ItemListContainer;

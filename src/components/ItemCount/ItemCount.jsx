@@ -2,7 +2,7 @@ import './ItemCount.css'
 import { useState, useEffect } from "react";
 import Swal from 'sweetalert2';
 
-function ItemCount({stock, initial, onAdd}) {
+export const ItemCount =({stock, initial, onAdd}) => {
     
     
     

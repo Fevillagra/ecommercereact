@@ -1,6 +1,6 @@
 import './Footer.css'
 
-function Footer() {
+export const Footer = () => {
     return(
         <footer className="footer" id="f">
             <div className="footer__content">
@@ -55,5 +55,3 @@ function Footer() {
         </footer>
     )
 }
-
-export default Footer;
